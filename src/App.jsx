@@ -1,6 +1,6 @@
 import React from "react"
 
-import Home from "./pages/Home2.jsx"
+import Home from "./pages/Home3.jsx"
 
 function App() {  
 
