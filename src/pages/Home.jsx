@@ -5,6 +5,27 @@ import logo from "../logo/logo_Edited.png";
 export default function Home() {
   return (
     <div className="font-sans text-stone-800 bg-[#FCFBF7]">
+
+      {/* Video Showcase - Pulled up for better visibility */}
+      <section className="py-16 bg-stone-950 overflow-hidden">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-serif text-stone-100 italic">A Living Ecosystem</h2>
+          </div>
+          
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video border border-stone-800 p-1 bg-stone-900">
+            <video 
+              className="w-full h-full object-cover rounded-xl"
+              controls
+              poster={bg} 
+              playsInline
+            >
+              <source src="/videos/farm-tour.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
       
       {/* Navbar - Reduced Padding for a Slimmer Profile */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 px-6 md:px-16 py-3 md:py-4 border-b border-stone-100 transition-all duration-300">
@@ -46,10 +67,10 @@ export default function Home() {
       </nav>
 
       {/* Optimized Spacer - Reduced to match slimmed Navbar */}
-      <div className="h-20 md:h-24"></div>
+      {/* <div className="h-20 md:h-24"></div> */}
 
       {/* Hero - Adjusted to min-h-[70vh] to bring video higher up */}
-      <section id="home" className="relative min-h-[70vh] flex items-center px-6 md:px-20 overflow-hidden bg-stone-100">
+      {/* <section id="home" className="relative min-h-[70vh] flex items-center px-6 md:px-20 overflow-hidden bg-stone-100">
         <div className="absolute inset-0 z-0">
           <img src={bg} alt="Farm" className="w-full h-full object-cover opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-r from-white via-white/40 to-transparent"></div>
@@ -68,28 +89,9 @@ export default function Home() {
             Explore the Sanctuary
           </button>
         </div>
-      </section>
+      </section> */}
 
-      {/* Video Showcase - Pulled up for better visibility */}
-      <section className="py-16 bg-stone-950 overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-serif text-stone-100 italic">A Living Ecosystem</h2>
-          </div>
-          
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video border border-stone-800 p-1 bg-stone-900">
-            <video 
-              className="w-full h-full object-cover rounded-xl"
-              controls
-              poster={bg} 
-              playsInline
-            >
-              <source src="/videos/farm-tour.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Stats - Refined & Simple */}
       <section className="py-12 bg-white border-y border-stone-100">
